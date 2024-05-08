@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Rock Papers Scissors Lizard Spock</h1>
+        </div>
+        <!-- player-container -->
+        <div class="player-container" id="player">
+            <h2>You - <span id="player-score"></span><span class="choice" id="player-choice"></span></h2>
+            <i class="fas fa-hand-rock" title="Rock" id="player-rock" onclick="select('rock')"></i>
+            <i class="fas fa-hand-paper" title="Paper" id="player-paper" onclick="select('paper')"></i>
+            <i class="fas fa-hand-scissors" title="Scissor" id="player-scissor" onclick="select('scissor')"></i>
+            <i class="fas fa-hand-lizard" title="Lizard" id="player-lizard" onclick="select('lizard')"></i>
+            <i class="fas fa-hand-spock" title="Spock" id="player-spock" onclick="select('spock')"></i>
+        </div>
+                <!-- computer-container -->
+                <div class="player-container" id="computer">
+                    <h2>You - <span id="computer-score"></span><span class="choice" id="computer-choice"></span></h2>
+                    <i class="fas fa-hand-rock" title="Rock" id="computer-rock"></i>
+                    <i class="fas fa-hand-paper" title="Paper" id="computer-paper"></i>
+                    <i class="fas fa-hand-scissors" title="Scissor" id="computer-scissor"></i>
+                    <i class="fas fa-hand-lizard" title="Lizard" id="computer-lizard"></i>
+                    <i class="fas fa-hand-spock" title="Spock" id="computer-spock"></i>
+                </div>
+                <!-- reset icon -->
+                <i class="fas fa-sync-alt reset-icon" title="Reset" onclick="resetAll()"></i>
+                <!-- result -->
+                <div class="result-container">
+                    <h3 class="result-text" id="resultText"></h3>
+                </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

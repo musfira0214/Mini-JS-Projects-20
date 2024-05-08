@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- loader -->
+    <div class="loader hidden">
+        <img src="rocket.svg" alt="Rocket Loading animation">
+    </div>
+    <!-- container -->
+    <div class="container">
+        <div class="navigation-container">
+            <span class="background">
+                <!-- resultsNav -->
+                <span class="navigation-items" id="results-nav">
+                    <h3 class="clickable" onclick="updateDOM('favourites')">Favourites</h3>
+                    <h3>&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;</h3>
+                    <h3 class="clickable" onclick="getNasaPictures();">Load More</h3>
+                </span>
+                <!-- favourites nav -->
+                <span class="navigation-items hidden" id="favorites-nav">
+                    <h3 class="clickable" onclick="getNasaPictures();">Load more NASA images</h3>
+            </span>
+        </div>
+        <!-- images container -->
+        <div class="images-container">
+        </div>
+    </div>
+    <!-- save confirmation -->
+    <div class="save-confirmed" hidden>
+        <h1>Added!</h1>
+    </div>
+    <!-- script -->
+    <script src="scrippted.js"></script>
+</body>
+</html>
